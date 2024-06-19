@@ -1,0 +1,596 @@
+.page-width {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+@font-face {
+    font-family: "Times";
+    src: url("Times Regular.ttf");
+    }
+    a,p,li{
+        font-family: "Fanwood Text", serif;
+    }
+    h1,h2,h3,h4,h5{
+        font-family: "Times";
+    }
+body {
+    margin: 0;
+    padding: 0;
+}
+header.header-main {
+    background: #000049;
+}
+.hm-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.social-logos {
+    display: flex;
+    gap: 11px;
+}
+a.hm-logo {
+    text-decoration: none;
+}
+a.hm-logo img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.header-interactive {
+    display: flex;
+    gap: 15px;
+}
+.main-logo img {
+    height: 60px;
+}
+img.int {
+    width: 20px;
+    height: 20px;
+}
+
+/*MAIN*/
+.nav-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.nav-wrap a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times_Regular';
+    font-size: 21px;
+    padding: 10px 0px;
+    font-weight: 400;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 10px 0px;
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times_Regular';
+    font-weight: 400;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.banner-img {
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 312px;
+    object-fit: cover;
+}
+.banner-img{
+    position: relative;
+}
+.banner-img::before {
+    content: '';
+    background: #00004963;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 312px;
+}
+h2.heading {
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+}
+.cs-wrap {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.cs-right {
+    width: 45%;
+}
+
+.cs-img img {
+    width: 700px;
+}
+
+
+.icon-text h2 {
+    margin: 0;
+}
+.letter-icon {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.location-icon {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.phone-icon {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.cn-text h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+.cn-text p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.cn-text img {
+    margin-top: 3px;
+    width: 24px;
+}
+.heading h2 {
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.heading p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.cs-left {
+    width: 47%;
+}
+.cs-wrap {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+section.contact-sec {
+    margin-top: 30px;
+}
+.cs-wrapp {
+    padding-left: 20px;
+}
+.cs-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.form-heading {
+    text-align: center;
+}
+
+.form-heading h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.form-heading p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0px 110px;
+    margin-bottom: 35px;
+}
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+.form-wrap {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-fields {
+    width: 100%;
+}
+
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    height: 60px;
+}
+a.sbt-btn {
+    text-decoration: none;
+    background: #000049;
+    padding: 13px 64px;
+    color: white;
+    font-family: 'Times';
+    font-size: 25px;
+    font-weight: 400;
+}
+.submit-button {
+    margin-top: 50px;
+}
+
+
+.form-field input,
+.form-field-message input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 60px;
+}
+.form-box input {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.form-box input {
+    width: 50%;
+    height: 60px;
+}
+.form-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.form-field-message input {
+    height: 120px;
+}
+input[type="text"]::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Times';
+    color: black;
+}
+
+
+.form-field-message {
+    position: relative;
+}
+
+input.Padding::placeholder {
+    position: absolute;
+    top: 10px;
+}
+input[type="text"] {
+    border: 1px solid #000000;
+}
+.map-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    display: block;
+}
+section.Location-map {
+    margin-top: 30px;
+}
+
+footer.footer-section {
+    background: #000049;
+    height: 314px;
+    position: relative;
+
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 16px 10px;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+a.foot-head {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "Times";
+    
+}
+.footer-col a {
+    text-decoration: none;
+    color: white;
+   
+    
+}
+h2.footer-base {
+    color: white;
+    font-size: 14px;
+    
+    margin: 77px 0px 0px 22px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+footer.footer-section::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    top: 88%;
+}
+h2.form-head {
+    font-size: 22px;
+    color: white;
+     font-family: "Times";
+    font-weight: 200;
+    margin-right: 45px;
+}
+.email-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+input.email-input {
+    height: 30px;
+    border: 1px solid #000049;
+    width: 100%;
+}
+button.send-button {
+    background: white;
+    border: none;
+    /* height: 32px; */
+    color: #000049;
+   
+    font-size: 11px;
+    padding: 10px 35px;
+}
+@media screen and (max-width:1024px) {
+    .banner-text {
+        position: absolute;
+        top: 31%;
+        left: 37%;
+    }
+    .cs-wrap {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .cs-img img {
+        width: 100%;
+        object-fit: cover;
+        height: 415px;
+    }
+}
+@media screen and (max-width:989px) {
+    .banner-text {
+        position: absolute;
+        top: 32%;
+        left: 32%;
+    }
+    .heading h2 {
+        font-weight: 400;
+        font-size: 27px;
+        margin-bottom: 5px;
+    }
+    .heading p {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+    .letter-icon {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        margin-bottom: 0px;
+    }
+    .location-icon {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        margin-bottom: 0px;
+    }
+    .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 16px 10px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    h2.footer-base {
+        color: white;
+        font-size: 14px;
+        margin: 48px 0px 0px 22px;
+        font-weight: 100;
+        text-transform: capitalize;
+    }
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media screen and (max-width:749px) {
+    .nav-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        flex-wrap: wrap;
+    }
+    .nav-wrap a {
+        text-decoration: none;
+        color: black;
+        font-family: 'Times_Regular';
+        font-size: 21px;
+        padding: 0px;
+        font-weight: 400;
+    }
+    h2.heading {
+        font-size: 49px;
+        font-weight: 400;
+        color: white;
+    }
+    .banner-text {
+        position: absolute;
+        top: 39%;
+        left: 16%;
+    }
+    .cs-left {
+        width: 100%;
+    }
+    .cs-wrap {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cs-img img {
+        width: 100%;
+        object-fit: cover;
+        height: 350px;
+    }
+    .cs-right {
+        width: 100%;
+    }
+    .form-heading p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 0px 30px;
+        margin-bottom: 35px;
+    }
+    .cn-text h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .cn-text img {
+        margin-top: 3px;
+        width: 18px;
+    }
+    .cn-text p {
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .form-box input {
+        width: 50%;
+        height: 40px;
+    }
+    .form-field input, .form-field-message input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 40px;
+    }
+    .form-field-message input {
+        height: 100px;
+    }
+    .form-field {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+        height: 60px;
+    }
+    a.sbt-btn {
+        text-decoration: none;
+        background: #000049;
+        padding: 6px 46px;
+        color: white;
+        font-family: 'Times';
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .map-img img {
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+        display: block;
+    }
+    footer.footer-section {
+        background: #000049;
+        height: 553px;
+        position: relative;
+    }
+    h2.form-head {
+        font-size: 21px;
+        color: white;
+        font-family: "Times";
+        font-weight: 200;
+        margin-right: 45px;
+        text-align: center;
+    }
+    footer.footer-section::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: white;
+        position: absolute;
+        top: 93%;
+       
+    }
+    h2.footer-base {
+        color: white;
+        font-size: 14px;
+        margin: 47px 0px 0px 0px;
+        font-weight: 100;
+        text-transform: capitalize;
+        text-align: center;
+    }
+}

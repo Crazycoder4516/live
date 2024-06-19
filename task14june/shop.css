@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "Times";
+    src: url("Times Regular.ttf");
+    }
+    .imgg img {
+        width: 100%;
+        display: block;
+        height: 312px;
+        object-fit: cover;
+    }
+    .banner-textt {
+        position: absolute;
+        top: 25%;
+        left: 45.5%;
+    }
+    .page-width{
+        
+    }
+    .imgg {
+        position: relative;
+    }
+    .imgg::before {
+        background: #0000492E;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+section.banner-imgg {
+    position: relative;
+}
+.banner-textt h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: times;
+    color: white;
+}
+.image-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.big-image img {
+    width: 344px;
+    padding: 49px 100px;
+    background: #EEEEEE;
+    display: block;
+}
+.small-images {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.small-images img {
+    width: 133px;
+    height: auto;
+    object-fit: cover;
+    background: #EEEEEE;
+    padding: 0px 34px;
+}
+.range-wrap {
+    display: flex;
+    width: 100%;
+}
+
+.product-left {
+    width: 60%;
+    padding: 28px 0px;
+}
+.big-image {
+    width: 100%;
+}
+.faq-answer {
+    display: none;
+}
+.toggle-answer {
+    cursor: pointer;
+    margin-left: 10px;
+}
+h1.product-name {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Times';
+    margin: 0px;
+    margin-bottom: 10px;
+}
+p.price {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Times';
+}
+.quantity {
+    display: flex;
+    align-items: baseline;
+    gap: 13px;
+}
+.quantity h1 {
+    font-weight: 400;
+    font-size: 19px;
+    font-family: 'Times';
+}
+.quantity p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: emoji;
+}
+p.descrip {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Fanwood Text", serif;
+}
+.des h1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Times';
+}
+.product-right {
+    width: 36%;
+}
+.right-wrap {
+    padding: 23px 0px 0px 0px;
+}
+.faq-answerr.show {
+    max-height: 200px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Fanwood Text';
+}
+.faq-answerr {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.1s ease;
+}
+.counter-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 0px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.counter-button {
+    background-color: #000049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+   
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.counter-value {
+    font-size: 20px;
+    min-width: 50px;
+    text-align: center;
+    background: #EEEEEEEE;
+    padding: 10px 0px;
+}
+.pi-wrap {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    justify-content: space-between;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+img.star {
+    width: 108px;
+    margin-top: 13px;
+}
+
+.heading h1 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Times';
+    text-align: center;
+    color: #000049;
+}
+.product p {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 400;
+    font-family: 'Times';
+}
+section.related-products {
+    margin-bottom: 100px;
+}
+.product h1 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Times';
+    padding: 0px 37px;
+}
+img.main-img1 {
+    width: 382px;
+    height: 260px;
+    background: #EEEEEE;
+    padding: 29px 0px 0px 10px;
+    object-fit: contain;
+}
+img.main-img2 {
+    width: 371px;
+    padding: 0px 10px;
+    background: #EEEEEE;
+    height: 289px;
+    object-fit: contain;
+}
+img.main-img3 {
+    width: 372px;
+    height: 268px;
+    background: #EEEEEE;
+    padding: 11px 10px;
+    object-fit: contain;
+}
+.des::after {
+    width: 100%;
+    background: black;
+    height: 1px;
+    content: "";
+    position: absolute;
+    margin-top: -19px;
+}
+.product-description {
+    position: relative;
+}
+a.cart {
+    background: #000049;
+    padding: 12px 42px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+img.heart {
+    border: 1px solid;
+    padding: 10px;
+    margin-left: 10px;
+}
+@media screen and (max-width:1024px) {
+    .product-left {
+        width: 100%;
+        padding: 28px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .range-wrap {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    img.main-img3 {
+        width: 213px;
+        height: 268px;
+        background: #EEEEEE;
+        padding: 11px 10px;
+        object-fit: contain;
+    }
+    img.main-img2 {
+        width: 247px;
+        padding: 0px 10px;
+        background: #EEEEEE;
+        height: 289px;
+        object-fit: contain;
+    }
+    img.main-img1 {
+        width: 250px;
+        height: 260px;
+        background: #EEEEEE;
+        padding: 29px 0px 0px 10px;
+        object-fit: contain;
+    }
+    .banner-textt {
+        position: absolute;
+        top: 25%;
+        left: 43.5%;
+    }
+}

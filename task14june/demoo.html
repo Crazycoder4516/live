@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="task14june.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<style>
+    body {
+    font-family: 'Fanwood Text', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .header-main, .main-nav {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.header .announcement-bar .ab-wrap {
+    text-align: center;
+}
+
+.header-main .hm-wrap, .main-nav .nav-wrap, .sec-2 .sec-2-wrap, .product-slider .ps-wrap, .footer .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main .social-logos .hm-logo, .header-main .header-interactive .int {
+    margin: 0 10px;
+}
+
+.main-nav .nav-wrap a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.banner-sec {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-sec .bs-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-sec .bg-img img {
+    width: 100%;
+}
+
+.sec-2 {
+    padding: 50px 0;
+}
+
+.sec-2 .s2w-left-wrap, .sec-2 .s2w-right-wrap {
+    width: 50%;
+}
+
+.sec-2 .s2w-left-wrap .sw2-btn {
+    margin-top: 20px;
+}
+
+.sec-2 .s2w-right-wrap img {
+    width: 100%;
+}
+
+.product-slider .product-list {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 20px 0;
+}
+
+.product-slider .product-item {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.product-slider .product-image img, .product-sec .col .col-img img, .social .social-post .sp-col img {
+    width: 100%;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.text-banner {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.product-sec .two-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-sec .col .col-img {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.social .social-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social .social-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social .social-post .sp-col {
+    position: relative;
+}
+
+.social .social-post .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.social .social-post .img-overlay img {
+    width: 20%;
+}
+
+.social .social-post .sp-col:hover .img-overlay {
+    opacity: 1;
+}
+
+.footer .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.footer .ftr-col .ftr-links a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="page-width">
+            <div class="announcement-bar">
+                <div class="ab-wrap">
+                    <h2 class="ab-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Yours with code ABCDEF</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header-main">
+        <div class="page-width">
+            <div class="hm-wrap">
+                <div class="social-logos">
+                    <a class="hm-logo" href="">
+                        <img src="images/Facebook F.svg" alt="Facebook">
+                    </a>
+                    <a class="hm-logo" href="">
+                        <img src="images/Instagram.svg" alt="Instagram">
+                    </a>
+                    <a class="hm-logo" href="">
+                        <img src="images/TwitterX.svg" alt="Twitter">
+                    </a>
+                </div>
+                <div class="main-logo">
+                    <a href="">
+                        <img src="images/thumb_DALL·E 2024-06-04 15.08.25 - Design a minimalistic business logo for a company called 'Elixir Genie' 1.svg" alt="Elixir Genie">
+                    </a>
+                </div>
+                <div class="header-interactive">
+                    <a href=""><img class="int" src="images/Search.svg" alt="Search"></a>
+                    <a href=""><img class="int" src="images/Customer.svg" alt="Customer"></a>
+                    <a href=""><img class="int" src="images/Add Shopping Cart.svg" alt="Cart"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="page-width">
+            <div class="nav-wrap">
+                <a href="">Home</a>
+                <a href="">Shop</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">FAQ</a>
+            </div>
+        </div>
+    </nav>
+    <section class="banner-sec">
+        <div class="bs-wrap">
+            <h2 class="bs-heading">Scent Trial Program</h2>
+            <p class="bs-description">FIND THE PERFECT SCENT</p>
+        </div>
+        <div class="bg-img">
+            <img src="images/Rectangle 3.png" alt="">
+        </div>
+    </section>
+    <section class="sec-2">
+        <div class="page-width">
+            <div class="sec-2-wrap">
+                <div class="s2w-left-">
+                    <div class="s2w-left-wrap">
+                        <div class="s2w-heading">
+                            <h2>About Elixir Genie</h2>
+                        </div>
+                        <div class="s2w-description">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                        </div>
+                        <div class="sw2-btn">
+                            <a class="s2w-btn-btn" href="">
+                                SHOP NOW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="s2w-right">
+                    <div class="s2w-right-wrap">
+                        <img src="images/Rectangle 4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-slider">
+        <div class="ps-wrap">
+            <div class="ps-heading">
+                Favourites <br> Perfumes
+            </div>
+            <div class="product-list">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/Rectangle 5.png" alt="">
+                    </div>
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="product-name">
+                        <h2>Wood Sage & Sea Salt <br> Cologne</h2>
+                    </div>
+                    <div class="product-price">
+                        <h2>$ 60.00 100 ML</h2>
+                    </div>
+                    <div class="cart-btn">
+                        <a class="cart-btn-btn" href="">Add To Bag</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/Rectangle 6.png" alt="">
+                    </div>
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="product-name">
+                        <h2>Wood Sage & Sea Salt <br> Cologne</h2>
+                    </div>
+                    <div class="product-price">
+                        <h2>$ 60.00 100 ML</h2>
+                    </div>
+                    <div class="cart-btn">
+                        <a class="cart-btn-btn" href="">Add To Bag</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="images/Rectangle 7.png" alt="">
+                    </div>
+                    <span class="best-seller">BEST SELLER</span>
+                    <div class="product-name">
+                        <h2>Wood Sage & Sea Salt <br> Cologne</h2>
+                    </div>
+                    <div class="product-price">
+                        <h2>$ 60.00 100 ML</h2>
+                    </div>
+                    <div class="cart-btn">
+                        <a class="cart-btn-btn" href="">Add To Bag</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner-image">
+        <div class="b-img-wrap">
+            <img src="images/banner.png" alt="">
+        </div>
+    </section>
+    <div class="text-banner">
+        <h2 class="tb-head">
+            Scent Trial Program
+        </h2>
+        <h2 class="tb-sub">FIND THE PERFECT SCENT</h2>
+    </div>
+    <section class="product-sec">
+        <div class="two-col">
+            <div class="col">
+                <div class="col-img">
+                    <img src="images/Rectangle 6.png" alt="">
+                    <h2>Scent Trial Program</h2>
+                    <h3>FIND THE PERFECT SCENT</h3>
+                </div>
+                <div class="col-img">
+                    <img src="images/Rectangle 7.png" alt="">
+                    <h2>Scent Trial Program</h2>
+                    <h3>FIND THE PERFECT SCENT</h3>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-img">
+                    <img src="images/Rectangle 8.png" alt="">
+                    <h2>Scent Trial Program</h2>
+                    <h3>FIND THE PERFECT SCENT</h3>
+                </div>
+                <div class="col-img">
+                    <img src="images/Rectangle 9.png" alt="">
+                    <h2>Scent Trial Program</h3>
+                    <h3>FIND THE PERFECT SCENT</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="social">
+        <div class="social-heading">
+            <img class="insta" src="images/Instagram.svg" alt="">
+            <h2>Elixir Genie</h2>
+        </div>
+        <div class="social-post">
+            <div class="sp-col">
+                <img src="images/Rectangle 15.png" alt="">
+                <div class="img-overlay">
+                    <img src="images/Instagram (1).png" alt="">
+                    <div class="overlay-background"></div>
+                </div>
+            </div>
+            <div class="sp-col">
+                <img src="images/Rectangle 16.png" alt="">
+                <div class="img-overlay">
+                    <img src="images/Instagram (1).png" alt="">
+                    <div class="overlay-background"></div>
+                </div>
+            </div>
+            <div class="sp-col">
+                <img src="images/Rectangle 17.png" alt="">
+                <div class="img-overlay">
+                    <img src="images/Instagram (1).png" alt="">
+                    <div class="overlay-background"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="page-width">
+            <div class="footer-wrap">
+                <div class="ftr-col">
+                    <div class="ftr-heading">
+                        <h2>Company</h2>
+                    </div>
+                    <div class="ftr-links">
+                        <a href="">About Us</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Careers</a>
+                    </div>
+                </div>
+                <div class="ftr-col">
+                    <div class="ftr-heading">
+                        <h2>Help</h2>
+                    </div>
+                    <div class="ftr-links">
+                        <a href="">FAQs</a>
+                        <a href="">Shipping</a>
+                        <a href="">Returns</a>
+                    </div>
+                </div>
+                <div class="ftr-col">
+                    <div class="ftr-heading">
+                        <h2>Legal</h2>
+                    </div>
+                    <div class="ftr-links">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                    </div>
+                </div>
+                <div class="ftr-col">
+                    <div class="ftr-heading">
+                        <h2>Follow Us</h2>
+                    </div>
+                    <div class="ftr-links">
+                        <a href="">Facebook</a>
+                        <a href="">Instagram</a>
+                        <a href="">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
